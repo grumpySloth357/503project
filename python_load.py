@@ -1,3 +1,5 @@
+#Use python to make sparse Xtrain,Xtest matrices and save it as .mat
+
 from scipy import sparse, io, vstack
 import pandas as pd
 
