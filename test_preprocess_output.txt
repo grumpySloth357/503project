@@ -1,0 +1,22 @@
+Original Dataset:
+   day   height  weight    road   label
+0    1  156.000  175.50    road  guilty
+1    1  103.000  465.40  street    free
+2    0   12.340  124.10    road  guilty
+3    2   12.734   12.12  street    free
+4    0  123.100  313.00   space    free
+
+
+New Dataset: <X>
+    height  weight  day_1  day_0  day_2  road_road  road_street  road_space
+0  156.000  175.50      1      0      0          1            0           0
+1  103.000  465.40      1      0      0          0            1           0
+2   12.340  124.10      0      1      0          1            0           0
+3   12.734   12.12      0      0      1          0            1           0
+4  123.100  313.00      0      1      0          0            0           1
+new Dataset: <Y>
+0    guilty
+1      free
+2    guilty
+3      free
+4      free
